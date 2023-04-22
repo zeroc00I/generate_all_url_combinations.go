@@ -12,8 +12,7 @@ func main() {
 		fmt.Println("Please provide an argument")
 		return
 	}
-	arg := os.Args[1]
-	urlString := arg
+	urlString := os.Args[1]
 	parsedUrl, err := url.Parse(urlString)
 	if err != nil {
 		panic(err)
